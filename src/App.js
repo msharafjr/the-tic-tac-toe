@@ -1,9 +1,10 @@
 import React from 'react';
+import Game from './components/game'
 
 function App() {
   return (
     <div>
-      The Tic-Tac-Toe game!
+      <Game />
     </div>
   );
 }
