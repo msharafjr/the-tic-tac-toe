@@ -22,7 +22,8 @@ h1 span:hover {
 
 .result {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .result p span {
