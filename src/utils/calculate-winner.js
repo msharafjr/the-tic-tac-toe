@@ -1,7 +1,7 @@
 /**
  * Calculate the winner
  * @param {Array[number]} board The board array
- * @returns {Boolean}
+ * @returns {null|String}
  */
 export default function calculateWinner(board) {
   const lines = [
@@ -18,8 +18,8 @@ export default function calculateWinner(board) {
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-      return true;
+      return board[a];
     }
   }
-  return false;
+  return null;
 }
